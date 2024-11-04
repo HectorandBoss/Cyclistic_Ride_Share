@@ -352,23 +352,10 @@ ggplot(mean_hourly_trips,aes(time_of_day, mean_ride_length)) +
   ggtitle("Average Ride Duration By Time of Day")
 
 #Export Data for further analysis and visualization
-# Create a new workbook
-workbook <- createWorkbook()
-# Add worksheets and write data
-addWorksheet(workbook, "Sheet1")
-writeData(workbook, "Sheet1", all_trips_v2)
-
-addWorksheet(workbook, "Sheet2")
-writeData(workbook, "Sheet2", mean_monthly_trips)
-
-addWorksheet(workbook, "Sheet3")
-writeData(workbook, "Sheet3", mean_daily_trips)
-
-addWorksheet(workbook, "Sheet4")
-writeData(workbook, "Sheet4", mean_hourly_trips)
-
-# Save the workbook
-saveWorkbook(workbook, "cleaned_cyclistic_data.xlsx")
+fwrite(all_trips_v2, file = "all_trips.csv")
+fwrite(mean_monthly_trips, file = "mean_monthly_trips.csv")
+fwrite(mean_daily_trips, file = "mean_daily_trips.csv")
+fwrite(mean_hourly_trips, file = "mean_hourly_trips.csv")
 ```
 
 ### Results
@@ -384,7 +371,7 @@ The analysis results are summarized below:
 8. On work days, 'Members' have a constant average ride duration, showing that members are mostly working class or students.
 9.  From friday to sunday, biking activities increases led by 'casuals' showing that all both user types are interested in leisure activities like shopping, exercising, e.t.c.
 
-Clean Data for visualization: 'all_trips.csv', 'mean_monthly_trips', 'mean_daily_trips', 'mean_hourly_trips'.
+Clean Data for visualization: 'all_trips.csv', 'mean_monthly_trips.csv', 'mean_daily_trips.csv', 'mean_hourly_trips.csv'.
 
 ### Recommendations
 
