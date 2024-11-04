@@ -372,10 +372,10 @@ saveWorkbook(workbook, "cleaned_cyclistic_data.xlsx")
 ### Results
 The analysis results are summarized below:
 
-1. `Members` are almost double the number of 'Casuals'.
+1. 'Members' are almost double the number of 'Casuals'.
 2. 'Members' use bikes for less time than 'casuals' per ride.
-3. Bike type is not a factor in determining usage.
-4. 'Casuals' use bikes for llonger time period per ride than 'members'.
+3. `Bike_type` is not a factor in determining usage.
+4. 'Casuals' use bikes for longer time period per ride than 'members'.
 5. Summer months have the highest biking activity.
 6. Weekends have the highest biking activity led by 'Casuals'.
 7. Inconclusive result, as there is no pattern in biking activity when segmented into hours.
@@ -391,7 +391,7 @@ My recommendations from the analysis are:
 
 ### Limitations
 
-I had to remove the 'start_station_name', 'start_station_id', 'end_station_name', 'end_station_id' fields as the last four datasets had alot of missing values in those fields there by causing bias as fields for more than a quarter was empty.
+I had to remove the `start_station_name`, `start_station_id`, `end_station_name`, `end_station_id` fields as the last four datasets had alot of missing values in those fields there by causing bias as fields for more than a quarter was empty.
 
 I also removed rows where the ride duration were less than 1 minute as it could be seen as bike re-docking or staff running maintainance check.
 
@@ -405,9 +405,16 @@ I also removed rows where the ride duration were less than 1 minute as it could 
 ### Optimization Comparison
 
 Initial script runtime: 1,041,780 ms ~ 17 Min 21 sec
+
 Optimized script runtime: 193,800 ms ~ 3 Min 13 sec
+
 Time saved: 14 Min 8 sec
 
 Initial Script Profiling:
 
-![unoptimized profvis](https://github.com/user-attachments/assets/154004e7-ff09-4119-b3ce-f5b37ef8f7f3)
+![unoptimized profvis](https://github.com/HectorandBoss/Cyclistic_Ride_Share/blob/main/unoptimized%20profvis.PNG)
+
+Optimized Script Profiling:
+
+![unoptimized profvis](https://github.com/HectorandBoss/Cyclistic_Ride_Share/blob/main/Optimized%20profvis.PNG)
+
