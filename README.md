@@ -368,3 +368,16 @@ The analysis results are summarized below:
 7. Inconclusive result, as there is no pattern in biking activity when segmented into hours.
 8. On work days, 'Members' have a constant average ride duration, showing that members are mostly working class or students.
 9.  From friday to sunday, biking activities increases led by 'casuals' showing that all both user types are interested in leisure activities like shopping, exercising, e.t.c.
+
+### Recommendations:
+
+My recommendations from the analysis are:
+- Reduce membership single ride time to 30 minutes from 45 minutes for work days but 45min on weekends with reduced price.
+- Redeemable Loyalty points for members: LP redemption for coffee, bottle water, giftcards or coupon, cyclistic merchandise, spotify discount.
+- Craft promotions that showcase what ‘casuals’ are missing out on to promote membership.
+
+### Limitations:
+
+I had to remove the 'start_station_name', 'start_station_id', 'end_station_name', 'end_station_id' fields as the last four datasets had alot of missing values in those fields there by causing bias as fields for more than a quarter was empty.
+
+I also removed rows where the ride duration were less than 1 minute as it could be seen as bike re-docking or staff running maintainance check.
