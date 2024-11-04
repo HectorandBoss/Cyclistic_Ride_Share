@@ -5,7 +5,7 @@
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Tools](#tools)
-- [Data Cleaning & Preparation](#data-cleaning-&-preparation)
+- [Data Cleaning And Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
 - [Results](#results)
@@ -28,7 +28,7 @@ The data sources used for this analysis are "202310-divvy-tripdata.csv",  "20231
 - Goolgle Slide - Presentation
 - Tableau - Dashboard Visualization
 
-### Data Cleaning & Preparation
+### Data Cleaning And Preparation
 
 In the initial data preparation stage, I performed the folliwing tasks:
 1. Data extraction into Rstudio from twelve .csv files.
