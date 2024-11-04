@@ -372,7 +372,7 @@ saveWorkbook(workbook, "cleaned_cyclistic_data.xlsx")
 ### Results
 The analysis results are summarized below:
 
-1. 'Members' are almost double the number of 'Casuals'.
+1. `Members` are almost double the number of 'Casuals'.
 2. 'Members' use bikes for less time than 'casuals' per ride.
 3. Bike type is not a factor in determining usage.
 4. 'Casuals' use bikes for llonger time period per ride than 'members'.
