@@ -19,7 +19,9 @@ In this case study, we aim to find out how casual users of cyclistic differ from
 
 ### Data Sources
 
-The data sources used for this analysis are "202310-divvy-tripdata.csv",  "202310-divvy-tripdata.csv",  "202311-divvy-tripdata.csv",  "202312-divvy-tripdata.csv",  "202401-divvy-tripdata.csv",  "202402-divvy-tripdata.csv",  "202403-divvy-tripdata.csv",  "202404-divvy-tripdata.csv",  "202405-divvy-tripdata.csv",  "202406-divvy-tripdata.csv",  "202407-divvy-tripdata.csv",  "202408-divvy-tripdata.csv", each containing monthly data of cyclistic bike usage.
+The data sources used for this analysis are "202310-divvy-tripdata.csv",  "202310-divvy-tripdata.csv",  "202311-divvy-tripdata.csv",  "202312-divvy-tripdata.csv",  "202401-divvy-tripdata.csv",  "202402-divvy-tripdata.csv",  "202403-divvy-tripdata.csv",  "202404-divvy-tripdata.csv",  "202405-divvy-tripdata.csv",  "202406-divvy-tripdata.csv",  "202407-divvy-tripdata.csv",  "202408-divvy-tripdata.csv", in the zip file from the source. Each containing monthly data of cyclistic bike usage.
+
+Source: [Download here](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 ### Tools
 
@@ -381,6 +383,8 @@ The analysis results are summarized below:
 7. Inconclusive result, as there is no pattern in biking activity when segmented into hours.
 8. On work days, 'Members' have a constant average ride duration, showing that members are mostly working class or students.
 9.  From friday to sunday, biking activities increases led by 'casuals' showing that all both user types are interested in leisure activities like shopping, exercising, e.t.c.
+
+Clean Data for visualization: 'all_trips.csv', 'mean_monthly_trips', 'mean_daily_trips', 'mean_hourly_trips'.
 
 ### Recommendations
 
