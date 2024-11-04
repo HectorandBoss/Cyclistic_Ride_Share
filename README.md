@@ -412,9 +412,9 @@ Time saved: 14 Min 8 sec
 
 Initial Script Profiling:
 
-![unoptimized profvis](https://github.com/HectorandBoss/Cyclistic_Ride_Share/blob/main/unoptimized%20profvis.PNG)
+![unoptimized profvis](unoptimized%20profvis.PNG)
 
 Optimized Script Profiling:
 
-![unoptimized profvis](https://github.com/HectorandBoss/Cyclistic_Ride_Share/blob/main/Optimized%20profvis.PNG)
+![optimized profvis](Optimized%20profvis.PNG)
 
