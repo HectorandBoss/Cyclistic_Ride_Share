@@ -312,7 +312,6 @@ ggplot(all_trips, aes(member_casual)) +
 mean_monthly_trips <- all_trips_v2[, .(mean_ride_length = fmean(ride_length_min)), by = .(member_casual, month)]
 mean_daily_trips <- all_trips_v2[, .(mean_ride_length = fmean(ride_length_min)), by = .(member_casual, day_of_week)]
 mean_hourly_trips <- all_trips_v2[, .(mean_ride_length = fmean(ride_length_min)), by = .(member_casual, time_of_day)]
-trip_overview <- all_trips_v2 %>% select(-c(ride_id, started_at, ended_at, month, day, year, day_of_week, time_of_day))
 
 #4. casuals use their bikes longer than members
 ggplot(mean_daily_trips) + 
@@ -356,7 +355,6 @@ ggplot(mean_hourly_trips,aes(time_of_day, mean_ride_length)) +
 fwrite(all_trips_v2, file = "all_trips.csv")
 fwrite(mean_monthly_trips, file = "mean_monthly_trips.csv")
 fwrite(mean_daily_trips, file = "mean_daily_trips.csv")
-fwrite(mean_hourly_trips, file = "mean_hourly_trips.csv")
 ```
 
 ### Results
@@ -372,7 +370,7 @@ The analysis results are summarized below:
 8. On work days, 'Members' have a constant average ride duration, showing that members are mostly working class or students.
 9.  From friday to sunday, biking activities increases led by 'casuals' showing that all both user types are interested in leisure activities like shopping, exercising, e.t.c.
 
-Clean Data for visualization: 'trip_overview.csv', 'mean_monthly_trips.csv', 'mean_daily_trips.csv', 'mean_hourly_trips.csv'.
+Clean Data for visualization: 'mean_monthly_trips.csv', 'mean_daily_trips.csv', 'mean_hourly_trips.csv'.
 
 ### Recommendations
 
