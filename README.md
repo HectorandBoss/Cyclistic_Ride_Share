@@ -1,5 +1,18 @@
 # Cyclistic Ride Share
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning & Preparation](#data-cleaning-&-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis](#data-analysis)
+- [Results](#results)
+- [Recommendations](#recommendations)
+- [Learning Points](#learning-points)
+- [Optimization Comparison](#optimization-comparison)
+
 ## Project Overview
 
 In this case study, we aim to find out how casual users of cyclistic differ from annual subscribers in terms of usage. Findings from this case study will be used to address the need for a more targeted advertisement approach in the future aimed at turning casual users into annual subscribers which will prop up cyclistic’s profit margin.
@@ -356,7 +369,7 @@ writeData(workbook, "Sheet4", mean_hourly_trips)
 saveWorkbook(workbook, "cleaned_cyclistic_data.xlsx")
 ```
 
-### Results:
+### Results
 The analysis results are summarized below:
 
 1. 'Members' are almost double the number of 'Casuals'.
@@ -369,15 +382,25 @@ The analysis results are summarized below:
 8. On work days, 'Members' have a constant average ride duration, showing that members are mostly working class or students.
 9.  From friday to sunday, biking activities increases led by 'casuals' showing that all both user types are interested in leisure activities like shopping, exercising, e.t.c.
 
-### Recommendations:
+### Recommendations
 
 My recommendations from the analysis are:
 - Reduce membership single ride time to 30 minutes from 45 minutes for work days but 45min on weekends with reduced price.
 - Redeemable Loyalty points for members: LP redemption for coffee, bottle water, giftcards or coupon, cyclistic merchandise, spotify discount.
 - Craft promotions that showcase what ‘casuals’ are missing out on to promote membership.
 
-### Limitations:
+### Limitations
 
 I had to remove the 'start_station_name', 'start_station_id', 'end_station_name', 'end_station_id' fields as the last four datasets had alot of missing values in those fields there by causing bias as fields for more than a quarter was empty.
 
 I also removed rows where the ride duration were less than 1 minute as it could be seen as bike re-docking or staff running maintainance check.
+
+### Learning Points
+
+1. I learnt to optimize my script by using better packages, below is a comparison between my initial script processing profile and an optimized version which is what I used in this doocumentation.
+2. I learnt to use github as it has always seem overwhelming in previous times.
+3. I learnt to never rush through the data cleaning phase of any project.
+4. I mastered the use of 'ggplot' for data visualization in R.
+
+### Optimization Comparison
+
