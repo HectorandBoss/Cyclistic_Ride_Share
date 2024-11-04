@@ -404,3 +404,10 @@ I also removed rows where the ride duration were less than 1 minute as it could 
 
 ### Optimization Comparison
 
+Initial script runtime: 1,041,780 ms ~ 17 Min 21 sec
+Optimized script runtime: 193,800 ms ~ 3 Min 13 sec
+Time saved: 14 Min 8 sec
+
+Initial Script Profiling:
+
+![unoptimized profvis](https://github.com/user-attachments/assets/154004e7-ff09-4119-b3ce-f5b37ef8f7f3)
