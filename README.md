@@ -388,6 +388,7 @@ My recommendations from the analysis are:
 - Reduce membership single ride time to 30 minutes from 45 minutes for work days but 45min on weekends with reduced price.
 - Redeemable Loyalty points for members: LP redemption for coffee, bottle water, giftcards or coupon, cyclistic merchandise, spotify discount.
 - Craft promotions that showcase what ‘casuals’ are missing out on to promote membership.
+- Slight price increase on weekends and summer time on 'Casual' users.
 
 ### Limitations
 
